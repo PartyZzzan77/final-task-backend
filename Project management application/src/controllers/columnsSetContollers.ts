@@ -1,8 +1,8 @@
 import { Response, Request } from 'express';
-import * as columnService from '../services/column.service';
-import { checkBody, createError } from '../services/error.service';
-import { socket } from '../services/server.service';
-import * as boardService from '../services/board.service';
+import * as columnService from '../api/column.service';
+import { checkBody, createError } from '../api/error.service';
+import { socket } from '../api/server.service';
+import * as boardService from '../api/board.service';
 
 export const updateSetOfColumns = async (req: Request, res: Response) => {
   const guid = req.header('Guid') || 'undefined';

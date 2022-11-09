@@ -1,7 +1,7 @@
 import { Response, Request } from 'express';
-import * as userService from '../services/user.service';
-import { checkBody, createError } from '../services/error.service';
-import { hashPassword } from '../services/hash.service';
+import * as userService from '../api/user.service';
+import { checkBody, createError } from '../api/error.service';
+import { hashPassword } from '../api/hash.service';
 
 
 export const getUsers = async (req: Request, res: Response) => {

@@ -1,7 +1,7 @@
 import task from '../models/task';
 import { ObjectId } from 'mongodb';
-import * as fileService from '../services/file.service';
-import * as pointService from '../services/point.service';
+import * as fileService from './file.service';
+import * as pointService from './point.service';
 import * as boardService from './board.service';
 import { socket } from './server.service';
 

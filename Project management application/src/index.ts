@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 import { PORT } from './constants';
 
-import * as serverService from './services/server.service';
+import * as serverService from './api/server.service';
 
 
 (async () => {
