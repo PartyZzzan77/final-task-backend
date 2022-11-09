@@ -2,12 +2,6 @@
   "version": 2,
   "outputDirectory": "dist/src",
   "installCommand": "npm install",
-  "builds": [
-    {
-      "src": "./index.js",
-      "use": "@vercel/node"
-    }
-  ],
   "routes": [
     {
       "src": "/(.*)",
