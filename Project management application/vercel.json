@@ -1,17 +1,5 @@
 {
   "version": 2,
   "outputDirectory": "dist/src",
-  "installCommand": "npm install",
-  "builds": [
-    {
-      "src": "./dist/src/api",
-      "use": "@vercel/node"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/"
-    }
-  ]
+  "installCommand": "npm install"
 }
