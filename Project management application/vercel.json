@@ -4,7 +4,7 @@
   "installCommand": "npm install",
   "builds": [
     {
-      "src": "./src/api",
+      "src": "./dist/src/api",
       "use": "@vercel/node"
     }
   ],
