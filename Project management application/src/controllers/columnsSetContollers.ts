@@ -1,7 +1,7 @@
 import { Response, Request } from 'express';
 import * as columnService from '../api/column.service';
 import { checkBody, createError } from '../api/error.service';
-import { socket } from '../api/server.service';
+import { socket } from '../api';
 import * as boardService from '../api/board.service';
 
 export const updateSetOfColumns = async (req: Request, res: Response) => {

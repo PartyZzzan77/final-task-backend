@@ -4,7 +4,7 @@ import * as taskService from '../api/task.service';
 import * as userService from '../api/user.service';
 import * as boardService from '../api/board.service';
 import { checkBody, createError } from '../api/error.service';
-import { socket } from '../api/server.service';
+import { socket } from '../api';
 
 
 export const updateSetOfTask = async (req: Request, res: Response) => {

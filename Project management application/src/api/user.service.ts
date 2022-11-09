@@ -2,7 +2,7 @@ import user from '../models/user';
 import { ObjectId } from 'mongodb';
 import * as taskService from './task.service';
 import * as boardService from './board.service';
-import { socket } from './server.service';
+import { socket } from '.';
 
 export const createUser = async (params: any, emit = true) => {
   const newUser = new user(params);
