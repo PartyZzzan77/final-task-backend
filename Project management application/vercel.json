@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "installCommand": "npm install",
   "outputDirectory": "dist/src",
+  "installCommand": "npm install",
   "builds": [
     {
       "src": "./api/index.js",
