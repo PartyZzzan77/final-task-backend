@@ -1,6 +1,6 @@
 import point from '../models/point';
 import { ObjectId } from 'mongodb';
-import { socket } from '.';
+import { socket } from './server.service';
 import * as boardService from './board.service';
 
 export const createPoint = async (params: any, guid: string, initUser: string, emit = true, notify = true) => {

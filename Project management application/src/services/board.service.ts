@@ -1,7 +1,7 @@
 import board from '../models/board';
 import { ObjectId } from 'mongodb';
 import * as columnService from './column.service';
-import { socket } from '.';
+import { socket } from './server.service';
 
 export const createBoard = async (params: any, guid: string, initUser: string, emit = true, notify = true) => {
   const newBoard = new board(params);

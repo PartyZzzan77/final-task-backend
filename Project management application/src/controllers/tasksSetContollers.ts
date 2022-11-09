@@ -1,10 +1,10 @@
 import { Response, Request } from 'express';
 import { ObjectId } from 'mongodb';
-import * as taskService from '../api/task.service';
-import * as userService from '../api/user.service';
-import * as boardService from '../api/board.service';
-import { checkBody, createError } from '../api/error.service';
-import { socket } from '../api';
+import * as taskService from '../services/task.service';
+import * as userService from '../services/user.service';
+import * as boardService from '../services/board.service';
+import { checkBody, createError } from '../services/error.service';
+import { socket } from '../services/server.service';
 
 
 export const updateSetOfTask = async (req: Request, res: Response) => {

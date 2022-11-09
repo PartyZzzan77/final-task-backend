@@ -1,5 +1,5 @@
 import { Response, Request } from 'express';
-import * as boardService from '../api/board.service';
+import * as boardService from '../services/board.service';
 
 
 export const getBoardsByUser = async (req: Request, res: Response) => {

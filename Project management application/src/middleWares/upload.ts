@@ -1,7 +1,7 @@
 import multer from 'multer';
 import fs from 'fs';
-import { checkBody } from '../api/error.service';
-import * as fileService from '../api/file.service';
+import { checkBody } from '../services/error.service';
+import * as fileService from '../services/file.service';
 
 const storage = multer.diskStorage({
   destination: (req, file, next) => {

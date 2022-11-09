@@ -1,7 +1,7 @@
 import { Response, Request } from 'express';
 import { ObjectId } from 'mongodb';
-import * as boardService from '../api/board.service';
-import { checkBody, createError } from '../api/error.service';
+import * as boardService from '../services/board.service';
+import { checkBody, createError } from '../services/error.service';
 
 
 export const getBoards = async (_: Request, res: Response) => {

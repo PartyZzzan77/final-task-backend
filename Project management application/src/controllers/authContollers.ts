@@ -1,8 +1,8 @@
 import { Response, Request } from 'express';
-import * as userService from '../api/user.service';
-import { checkBody, createError } from '../api/error.service';
-import { checkPassword, hashPassword } from '../api/hash.service';
-import { signToken } from '../api/token.service';
+import * as userService from '../services/user.service';
+import { checkBody, createError } from '../services/error.service';
+import { checkPassword, hashPassword } from '../services/hash.service';
+import { signToken } from '../services/token.service';
 
 export const signIn = async (req: Request, res: Response) => {
 

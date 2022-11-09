@@ -1,6 +1,6 @@
 import { Response, Request } from 'express';
-import * as taskService from '../api/task.service';
-import { checkBody, createError } from '../api/error.service';
+import * as taskService from '../services/task.service';
+import { checkBody, createError } from '../services/error.service';
 
 
 

@@ -1,7 +1,7 @@
 import file from '../models/file';
 import fs from 'fs';
 import { ObjectId } from 'mongodb';
-import { socket } from '.';
+import { socket } from './server.service';
 import * as boardService from './board.service';
 
 export const createFile = async (params: any, guid: string, initUser: string, emit = true, notify = true) => {

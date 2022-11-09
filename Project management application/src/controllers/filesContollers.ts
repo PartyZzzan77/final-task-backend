@@ -1,8 +1,8 @@
 import { Response, Request } from 'express';
-import { createError } from '../api/error.service';
+import { createError } from '../services/error.service';
 import fs from 'fs';
-import * as fileService from '../api/file.service';
-import * as boardService from '../api/board.service';
+import * as fileService from '../services/file.service';
+import * as boardService from '../services/board.service';
 
 
 

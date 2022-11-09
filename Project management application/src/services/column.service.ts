@@ -2,7 +2,7 @@ import column from '../models/column';
 import { ObjectId } from 'mongodb';
 import * as taskService from './task.service';
 import * as boardService from './board.service';
-import { socket } from '.';
+import { socket } from './server.service';
 
 export const createColumn = async (params: any, guid: string, initUser: string, emit = true, notify = true) => {
   const newColumn = new column(params);
